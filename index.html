@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Streamline Your Workflow with Tech</h1>
+        <p>Experience the future of task management with our app.</p>
+        <div class="cta-buttons">
+            <button class="cta">Get Started</button>
+            <button class="cta secondary">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <div class="feature-container">
+      <section id="features">
+          <h2>Features</h2>
+          <div class="feature">
+              <h3 class="features-heading">Smart Task Management</h3>
+              <p class="feature-text">Effortlessly prioritize tasks with our smart task management feature, which allows users to efficiently assign tasks, set deadlines, and track progress. This comprehensive tool enhances workflow management by providing a streamlined process for organizing and managing tasks. Users can easily stay on top of their responsibilities and monitor project progress with ease, ensuring optimal productivity and efficiency.</p>
+          </div>
+          <div class="feature">
+              <h3 class="features-heading" >Automated Workflow</h3>
+              <p class="feature-text" >Streamline your workflow effortlessly with our automation feature. By automating repetitive tasks, users can save valuable time, minimize errors, and redirect their focus towards high-value activities. This functionality enhances productivity and efficiency, empowering users to achieve their goals more effectively.</p>
+          </div>
+          <div class="feature">
+              <h3 class="features-heading" >Collaborative Workspace</h3>
+              <p class="feature-text">Elevate collaboration through our shared workspace, where users can seamlessly share files, exchange ideas, and provide real-time feedback. This fosters a dynamic team environment, empowering members to work together efficiently and achieve collective goals with enhanced communication and collaboration tools.</p>
+          </div>
+          <div class="feature">
+              <h3 class="features-heading" >Real-time Updates</h3>
+              <p class="feature-text">Stay constantly updated with our real-time updates feature, ensuring you receive instant notifications regarding task assignments, deadline modifications, and significant project milestones. This functionality empowers you to remain in the loop, facilitating proactive decision-making and efficient project management.</p>
+          </div>
+      </section>
+  </div>
+
+    <!-- Gallery Section -->
+    <section style="text-align: center; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;" id="gallery">
+      <h2>Gallery</h2>
+      <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot1.jpg" alt="Screenshot 1">
+      <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot2.jpg" alt="Screenshot 2">
+      <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot3.jpg" alt="Screenshot 3">
+      <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot4.jpg" alt="Screenshot 4">
+      <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot5.jpg" alt="Screenshot 5">
+      <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot6.jpg" alt="Screenshot 5">
+  </section>
+  
+
+    <!-- Testimonials Section  -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <form id="testimonial-form">
+            <div class="testimonial-input">
+                <label for="user-name">Your Name:</label>
+                <input type="text" id="user-name" name="user-name" required placeholder="Enter Your Name...">
+            </div>
+            <div class="testimonial-input">
+                <label for="user-feedback">Your Feedback:</label>
+                <textarea id="user-feedback" name="user-feedback" required placeholder="Add your comments here..."></textarea>
+            </div>
+            <button type="submit" class="cta">Submit</button>
+        </form>
+        <h3 style="text-align: left; border-left: 4px solid rgb(182, 175, 175);"> &nbsp; <span style="color: rgb(224, 211, 186);">Comments Section...</span></h3>
+        <div id="submitted-testimonials">
+            <!-- User testimonials will be displayed here -->
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section style="text-align: center;" id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="plan">
+            <h3>Free</h3>
+            <p>$0/month</p>
+        </div>
+        <div class="plan">
+            <h3>Pro</h3>
+            <p>$9.99/month</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <form id="testimonial-form">
+          <input type="text" id="user-name" placeholder="Your Name">
+          <input type="email" id="user-email" placeholder="Your Email">
+          <textarea id="user-feedback" placeholder="Your Feedback"></textarea>
+          <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle" class="toggle-button">Toggle Dark Mode</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
