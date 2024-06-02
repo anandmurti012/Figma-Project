@@ -4,7 +4,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 #hero {
   display: flex;
   flex-direction: column;
@@ -14,6 +16,7 @@ body {
   background: #f8f9fa;
   text-align: center;
   padding: 20px;
+  background-image: linear-gradient(rgb(147, 233, 236), white);
 }
 
 #hero h1 {
@@ -86,6 +89,19 @@ p {
 h2 {
   color: #007bff; /* Heading color */
   margin-bottom: 20px; /* Add bottom margin */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #011b36;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for gallery images */
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 #testimonials {
@@ -247,13 +263,13 @@ body.dark-mode #submitted-testimonials .testimonial p{
 }
 /* Dark Mode Toggle Button */
 .toggle-button {
-  position: fixed;
   top: 20px;
   right: 20px;
+  position: right;
   padding: 10px 20px;
   font-size: 1em;
   color: white;
-  background-color: #007bff;
+  background-color: #455353;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -261,5 +277,35 @@ body.dark-mode #submitted-testimonials .testimonial p{
 }
 
 .toggle-button:hover {
-  background-color: #0056b3;
+  background-color: #011b36;
+}
+/* Container for the dark mode toggle elements */
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+/* Style for the heading */
+.toggle-container h4 {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Style for the button */
+.toggle-container .toggle-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #455353;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-container .toggle-button:hover {
+  background-color: #011b36;
 }

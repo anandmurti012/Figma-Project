@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Hero Section -->
     <section id="hero">
+      <div class="toggle-container">
+       <span>Dark/Light</span> <button id="dark-mode-toggle" class="toggle-button"><i class="fa-solid fa-moon"></i></button>
+      
+    </div>
         <h1>Streamline Your Workflow with Tech</h1>
         <p>Experience the future of task management with our app.</p>
         <div class="cta-buttons">
@@ -40,16 +47,29 @@
       </section>
   </div>
 
-    <!-- Gallery Section -->
-    <section style="text-align: center; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;" id="gallery">
-      <h2>Gallery</h2>
+ <!-- Gallery Section -->
+<section style="text-align: center; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;" id="gallery">
+  <h2>Gallery</h2>
+  <a href="images/screenshot1.jpg" data-lightbox="gallery">
       <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot1.jpg" alt="Screenshot 1">
+  </a>
+  <a href="images/screenshot2.jpg" data-lightbox="gallery">
       <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot2.jpg" alt="Screenshot 2">
+  </a>
+  <a href="images/screenshot3.jpg" data-lightbox="gallery">
       <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot3.jpg" alt="Screenshot 3">
+  </a>
+  <a href="images/screenshot4.jpg" data-lightbox="gallery">
       <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot4.jpg" alt="Screenshot 4">
+  </a>
+  <a href="images/screenshot5.jpg" data-lightbox="gallery">
       <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot5.jpg" alt="Screenshot 5">
-      <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot6.jpg" alt="Screenshot 5">
-  </section>
+  </a>
+  <a href="images/screenshot6.jpg" data-lightbox="gallery">
+      <img style="height: 200px; width: 250px; border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.1s ease;" src="images/screenshot6.jpg" alt="Screenshot 6">
+  </a>
+</section>
+
   
 
     <!-- Testimonials Section  -->
@@ -97,8 +117,9 @@
     </section>
 
     <!-- Dark Mode Toggle Button -->
-    <button id="dark-mode-toggle" class="toggle-button">Toggle Dark Mode</button>
+   
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
